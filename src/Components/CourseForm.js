@@ -10,8 +10,9 @@ function CourseForm(props) {
             id="title"
             type="text"
             name="title"
+            onChange={props.onChange}
             className="form-control"
-            value=""
+            value={props.course.title}
           />
         </div>
       </div>
@@ -22,11 +23,12 @@ function CourseForm(props) {
           <select
             id="author"
             name="authorId"
-            value=""
+            onChange={props.onChange}
+            value={props.course.authorId || ""}
             className="form-control"
           >
             <option value="" />
-            <option value="1">Cory House</option>
+            <option value="1">Avantika Sarkar</option>
             <option value="2">Scott Allen</option>
           </select>
         </div>
@@ -38,9 +40,10 @@ function CourseForm(props) {
           <input
             type="text"
             id="category"
+            onChange={props.onChange}
             name="category"
             className="form-control"
-            value=""
+            value={props.course.category}
           />
         </div>
       </div>
