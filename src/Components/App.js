@@ -6,6 +6,8 @@ import Courses from './Courses'
 import { Route , Switch} from 'react-router-dom'
 import PageNotFound from './PageNotFound'
 import ManageCourse from './ManageCourse'
+import {ToastContainer} from 'react-toastify'
+import "react-toastify/dist/ReactToastify.css"
 
 
 
@@ -17,6 +19,7 @@ function App(){
             backgroundColor : "powderblue"
         }}
     >
+        <ToastContainer autoClose ={3000} hideProgressBar />
         <Header />
         
         <Switch>
