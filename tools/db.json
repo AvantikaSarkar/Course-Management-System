@@ -72,35 +72,11 @@
     },
     {
       "id": 11,
-      "slug": "abc-jijgherinieuhierniv",
-      "title": "Abc jijgherinieuhierniv",
-      "authorId": 2,
-      "category": "dhwiufwiiwefnwf",
-      "createdAt": 1609761178972
-    },
-    {
-      "id": 12,
-      "slug": "mern-stack-course",
-      "title": "MERN Stack Course",
+      "slug": "kjsiwe",
+      "title": "kjsiwe",
       "authorId": 1,
-      "category": "Web Development 2023",
-      "createdAt": 1609761224092
-    },
-    {
-      "id": 13,
-      "slug": "blah-blah",
-      "title": "Blah blah",
-      "authorId": 1,
-      "category": "whatevs",
-      "createdAt": 1609761507713
-    },
-    {
-      "id": 14,
-      "slug": "saying-no",
-      "title": "Saying yes",
-      "authorId": 1,
-      "category": "self help",
-      "createdAt": 1609762250678
+      "category": "kjhiwef",
+      "createdAt": 1613485964756
     }
   ],
   "authors": [

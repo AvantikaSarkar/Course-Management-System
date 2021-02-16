@@ -8,18 +8,27 @@ import PageNotFound from './PageNotFound'
 import ManageCourse from './ManageCourse'
 import {ToastContainer} from 'react-toastify'
 import "react-toastify/dist/ReactToastify.css"
+import { makeStyles } from '@material-ui/core/styles';
+import { CssBaseline } from '@material-ui/core';
 
 
 
+const useStyles = makeStyles((theme) => ({
+    root: {
+      minHeight: '100vh',
+      backgroundImage: `url(${process.env.PUBLIC_URL + '/bg2.jpg'})`,
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: 'cover',
+    },
+  }));
 function App(){
 
+    const classes = useStyles();
+
     return(
-    <div className="container-fluid"
-        style={{
-            backgroundColor : "powderblue"
-        }}
-    >
+    <div className= {classes.root}>
         <ToastContainer autoClose ={3000} hideProgressBar />
+        <CssBaseline />
         <Header />
         
         <Switch>

@@ -3,6 +3,7 @@ import { getCourses } from '../api/courseApi.js'
 import CourseList from './CourseList'
 import {Link} from 'react-router-dom'
 
+
 //fetching the list of courses from MockAPI and passing as props to the markup component
 
 function Courses(){
@@ -15,9 +16,14 @@ function Courses(){
 
     return (
             <>
-                <h2> <b>Course Library</b></h2>
+               <h1 align="center" style={{color:'white', paddingBottom: '3%'}}>Course Library</h1>
+                <div> 
+                
                 <CourseList courses={courses} />
-                <Link className="btn btn-primary" to='/course'>Add Course</Link>
+                </div>
+                <div class="text-center"> 
+                <Link className="btn btn-primary" to='/course'>Add New Course</Link> 
+                </div>
             </>
         )
     }

@@ -4,9 +4,9 @@ import React from 'react'
 function AboutPage(){
 
     return(
-        <div className="jumbotron">
+        <div align="center" style={{color:'white'}}>
             <h1>About  TreasureBox, </h1>
-            <p> We help you find the perfect course according to your needs from the top courses available.</p>
+            <h4> We help you find the perfect course according to your needs from the top courses available.</h4>
             
         </div>
     )

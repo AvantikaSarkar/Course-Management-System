@@ -7,9 +7,9 @@ function CourseList(props){
 
     return(
         <>
-             <table className="table">
+             <table className="table" style={{color:'white'}}>
                     <thead>
-                        <tr>
+                        <tr align="center">
                             <th>Title</th>
                             <th>Author ID</th>
                             <th>Category</th>
@@ -19,7 +19,7 @@ function CourseList(props){
                     <tbody>
                         {props.courses.map(course => {
                             return (
-                                <tr key={course.id}> 
+                                <tr key={course.id} align="center"> 
                                     <td><Link to={'/course/'+ course.slug}>{course.title}</Link></td>
                                     <td>{course.authorId}</td>
                                     <td>{course.category}</td>
