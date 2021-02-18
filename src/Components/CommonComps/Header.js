@@ -1,8 +1,8 @@
-import React, { useEffect, useState }    from 'react';
+import React     from 'react';
 import {NavLink} from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
-import { AppBar, IconButton, Toolbar, Collapse } from '@material-ui/core';
-import { Link as Scroll } from 'react-scroll';
+import { AppBar, Toolbar } from '@material-ui/core';
+
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -32,10 +32,6 @@ const useStyles = makeStyles((theme) => ({
       color: '#fff',
       fontSize: '4.5rem',
     },
-    goDown: {
-      color: '#5AFF3D',
-      fontSize: '4rem',
-    },
   }));
 
 
@@ -43,10 +39,6 @@ function Header(){
 
     const classes = useStyles();
     const activeStyle = {color : "#5AFF3D"};
-    const [checked, setChecked] = useState(false);
-    useEffect(() => {
-        setChecked(true);
-      }, []);
 
     return(
         <div className={classes.root} id="header"> 

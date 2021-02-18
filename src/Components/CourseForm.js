@@ -1,14 +1,19 @@
 import React from "react";
 import TextInput from './CommonComps/TextInput'
 import PropTypes from 'prop-types'
+import './course-form.css'
+
 
 function CourseForm(props) {
   return (
-    <form onSubmit={props.onSubmit}>
+    <>
+    <h2 className="text-center" style={{color : "whitesmoke"}}> <i>New Course Details</i></h2>
+    <form className ="login-form" onSubmit={props.onSubmit}>
+      
       
           <TextInput
             id="title"
-            label="Title"
+            label="Book Title"
             name="title"
             onChange={props.onChange}
             value={props.course.title}
@@ -17,7 +22,7 @@ function CourseForm(props) {
 
 
       <div className="form-group">
-        <label htmlFor="author">Author</label>
+        <label   htmlFor="author"><b>Author</b></label>
         <div className="field">
           <select
             id="author"
@@ -45,8 +50,9 @@ function CourseForm(props) {
             error={props.errors.category}
        />
 
-      <input type="submit" value="Save" className="btn btn-primary" />
+      <input type="submit" value="Save" className="save-button btn btn-dark btn-block" />
     </form>
+    </>
   );
 }
 

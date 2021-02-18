@@ -22,7 +22,7 @@ function Courses(){
                 <CourseList courses={courses} />
                 </div>
                 <div class="text-center"> 
-                <Link className="btn btn-primary" to='/course'>Add New Course</Link> 
+                <Link className="btn btn-dark" to='/course'>Add New Course</Link> 
                 </div>
             </>
         )
