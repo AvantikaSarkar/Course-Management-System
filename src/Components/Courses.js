@@ -4,6 +4,7 @@ import CourseList from './CourseList'
 import {Link} from 'react-router-dom'
 
 
+
 //fetching the list of courses from MockAPI and passing as props to the markup component
 
 function Courses(){
@@ -14,7 +15,9 @@ function Courses(){
     }, [])
     
 
-    return (
+
+
+   return (
             <>
                <h1 align="center" style={{color:'white', paddingBottom: '3%'}}>Course Library</h1>
                 <div> 
@@ -26,6 +29,7 @@ function Courses(){
                 </div>
             </>
         )
+
     }
 
 
