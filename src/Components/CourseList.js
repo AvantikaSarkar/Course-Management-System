@@ -24,8 +24,8 @@ const useStyles = makeStyles({
       marginBottom: 12
     },
     gridContainer: {
-          paddingLeft: "40px",
-          paddingRight: "40px"
+          paddingLeft: "50px",
+          paddingRight: "50px"
         }
      
   });
@@ -40,7 +40,7 @@ function CourseList(props){
         <>
          <Grid
                 container
-                spacing={4}
+                spacing={5}
                 className={classes.gridContainer}
                 justify="center"
               >
