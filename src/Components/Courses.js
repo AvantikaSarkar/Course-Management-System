@@ -24,7 +24,7 @@ function Courses(){
                 
                 <CourseList courses={courses} />
                 </div>
-                <div class="text-center"> 
+                <div class="text-center" style={{ paddingBottom: '3%'}}> 
                 <Link className="btn btn-dark" to='/course'>Add New Course</Link> 
                 </div>
             </>

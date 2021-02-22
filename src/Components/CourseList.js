@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { makeStyles } from "@material-ui/core/styles";
 import Card from "@material-ui/core/Card";
 import CardActions from "@material-ui/core/CardActions";
@@ -7,6 +7,7 @@ import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { Grid } from "@material-ui/core";
+import CardMedia from '@material-ui/core/CardMedia' ;
 
 const useStyles = makeStyles({
     root: {
@@ -35,7 +36,6 @@ const useStyles = makeStyles({
 function CourseList(props){
 
     const classes = useStyles();
-
     return (
         <>
          <Grid
@@ -49,7 +49,11 @@ function CourseList(props){
      return (
         <Grid item xs={12} sm={6} md={4} key={course.id}  >        
         <Card className={classes.root} variant="outlined">
-          <CardContent  className={classes.content}>
+          <CardMedia 
+          component ="img"
+          image = "https://www.geteducated.com/wp-content/uploads/2019/11/online-tutoring-concept-ebooks-internet-courses-process-vector-staff-vector-id1053519062.jpg"
+          />
+         <CardContent  className={classes.content}>
 
             <Typography variant="h5" component="h2" align="center">
             <Link to={'/course/'+ course.slug}>{course.title}</Link>
